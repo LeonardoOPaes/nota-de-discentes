@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Alunos</title>
+</head>
+<body>
+    <header>
+        <h1>Notas de Discentes</h1>
+    </header>
+    <main>
+        <section class="section-inserir-dados">
+            <div class="div-inserir-dados">
+                <label>Nome</label>
+                <input type="text"id="inserir-nome">
+            </div>
+            <div class="div-inserir-notas">
+                <label>Nota 1</label>
+                <input type="number" class="inserir-nota" id="nota1">
+                <label>Nota 2</label>
+                <input type="number" class="inserir-nota" id="nota2">
+                <label>Nota 3</label>
+                <input type="number" class="inserir-nota" id="nota3">
+            </div>
+            <div class="div-inserir-botao">
+                <button id="Enviar">Enviar</button>
+                <button id="Limpar">Limpar</button>
+            </div>
+        </section>
+        <div class="div-tabela">
+            <table class="lita-alunos">
+                <tr>
+                    <td>Nome</td>
+                    <td>Nota 1</td>
+                    <td>Nota 2</td>
+                    <td>Nota 3</td>
+                    <td>Média</td>
+                    <td>Exclusão</td>
+                </tr>
+                <tbody id="tabela-alunos">
+                </tbody>
+
+            </table>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+
+
+body{
+    background-color: #F1F4F9;;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B2558;
+    margin-bottom: 25px;
+}
+
+main{
+    background-color: #F1F4F9;
+    height: 100vh;
+    width: 100%;
+}
+
+header h1{
+    font-size: 48px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.section-inserir-dados{
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+}
+.div-inserir-dados{
+    padding: 0 0 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-inserir-notas{
+    padding: 0 0 1rem 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-inserir-botao{ 
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inserir-nota{
+    width: 60px;
+}
+
+input{
+    border: 1px solid black;
+    height: 20px;
+    padding: .6rem .3rem .6rem .3rem;
+    margin: 0 5px 0 5px;
+}
+
+.div-tabela{
+    min-height: 250px;
+    max-width: 70%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.10);
+}
+
+.lita-alunos{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lita-alunos tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#tabela-alunos td{
+    background-color: #eeeeee;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0 .5rem 0;
+}
+
+#Enviar{
+    margin-right: .5rem;
+}
+
+.lita-alunos tr td{
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+button{
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px .5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+#excluir{
+    background: #FF4742;
+  border: 1px solid #FF4742;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px .5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover{
+  background-color: #07c;
+}
+
+button:active{
+  background-color: #0064bd;
+}
+
+.reprovado{
+    color: red;
+}
+
+.aprovado{
+    color: green;
+}
+
+.preencher{
+    border: 1px solid red;
+}
+
+#excluir:hover,
+#excluir:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+  border: 1px solid #FF4742;
+}
+
+#excluir:active {
+  opacity: .5;
+}
+
+@media screen and (max-width: 1000px){
+    .section-inserir-dados{
+        max-width: 70%;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+    td{
+        font-size: 18px;
+    }
+
+    #excluir{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 550px){
+    .section-inserir-dados{
+        max-width: 75%;
+    }
+
+    .div-tabela{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        background-color: #0B2558;
+        margin-bottom: 25px;
+    }
+    
+    header h1{
+        font-size: 32px;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .section-inserir-dados{
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-inserir-notas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    .div-inserir-dados{
+        padding-bottom: 5px;
+    }
+    .div-inserir-notas label{
+        margin-bottom: 5px;
+    }
+
+    .div-tabela{
+        max-width: 90%;
+    }
+
+    td{
+        font-size: 14px;
+    }
+
+    #excluir{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    header h1{
+        font-size: 26px;
+        font-weight: normal;
+        color: #fff;
+    }
+
+    .section-inserir-dados{
+        max-width: 90%;
+    }
+    label{
+        font-size: 13px;
+    }
+    td{
+        font-size: 10px;
+    }
+
+    #excluir{
+        font-size: 10px;
+    }
+}
