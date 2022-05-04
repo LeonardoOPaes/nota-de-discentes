@@ -7,4 +7,4 @@ Projeto elaborado com o intúito de fixar e compreender melhor as seguintes habi
 - Manipulação do DOM;
 - Utilização de Objetos.
 
-<a href="https://leonardoopaes.github.io/nota-de-discentes/">Acessar a Aplicação Web</a>
+<a href="https://leonardopaeslp.github.io/nota-de-discentes/">Acessar a Aplicação Web</a>
